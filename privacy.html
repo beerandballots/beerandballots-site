@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Beer and Ballots</title>
+<meta name="description" content="What the Beer and Ballots app keeps on your device, what group mode sends to us, and how to delete it.">
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1b18; --muted: #5f5a52; --rule: #e3dfd6; --accent: #8a4b0f; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #171614; --fg: #ece8e1; --muted: #a8a196; --rule: #34312c; --accent: #e3a35c; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+nav { max-width: 44rem; margin: 0 auto; padding: 1rem 1rem 0; display: flex; gap: 1.25rem;
+  flex-wrap: wrap; font-size: 0.95rem; }
+nav a:first-child { font-weight: 600; margin-right: auto; }
+a { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 1rem 0 0.5rem; }
+h2 { font-size: 1.3rem; margin-top: 2.25rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.muted { color: var(--muted); }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 0.9rem; width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 0.5rem; border-bottom: 1px solid var(--rule); }
+footer { margin-top: 3rem; font-size: 0.9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<nav><a href="/">Beer and Ballots</a><a href="/support">Support</a><a href="/privacy">Privacy</a></nav>
+<main>
+<h1 id="beer-and-ballots-privacy-policy">Beer and Ballots Privacy
+Policy</h1>
+<p><strong>Effective October 8, 2026</strong> · Last updated October 8,
+2026</p>
+<p>Beer and Ballots ("the app", "we") is run by Michael Gaston. You can
+reach us at <a
+href="mailto:support@beerandballots.com"><span>support@beerandballots.com</span></a>.</p>
+<h2 id="the-short-version">The short version</h2>
+<ul>
+<li><strong>No account, name, email or phone number.</strong> You never
+give us any of them.</li>
+<li><strong>No ads, tracking or analytics.</strong> The app contains no
+advertising or analytics code, and it doesn't read your device's
+advertising ID.</li>
+<li><strong>Looking up your ballot and keeping picks happens on your
+device.</strong> Your reactions, highlights, notes and choices stay
+there unless you share them to a group.</li>
+<li><strong>Groups are optional, and they do send data to our
+server.</strong> Opening the Groups tab creates an anonymous account. If
+you create or join a group, we also store your handle, your ZIP code and
+what you post, and the other members of that group can see it. The
+details are in <a href="#what-group-mode-sends-to-us">What group mode
+sends to us</a>.</li>
+<li><strong>You can delete it.</strong> <em>Your data</em> (in the
+Ballot menu or the Groups tab) erases what's on your device and,
+separately, deletes everything you have in groups from our server.</li>
+</ul>
+<h2 id="what-stays-on-your-device">What stays on your device</h2>
+<p>The app saves these on your iPhone or iPad only:</p>
+<ul>
+<li>Your <strong>reactions</strong> (thumbs up or down, with an optional
+weight and note), <strong>text highlights</strong>, <strong>ballot
+choices</strong> and <strong>community notes</strong> you've
+written.</li>
+<li>Your <strong>group handle</strong> (the name you type for groups)
+and the list of people you've <strong>blocked</strong>.</li>
+<li>Your <strong>privacy-screen settings</strong> (the app covers itself
+in the app switcher and after a period of inactivity, and can ask for
+Face ID or your passcode to uncover it).</li>
+</ul>
+<p>Some details:</p>
+<ul>
+<li><strong>Your ZIP code</strong> is kept in memory while the app is
+open and isn't saved by the app between launches. It is sent to our
+server only if you create or join a group.</li>
+<li><strong>An address</strong> you type to narrow your district is sent
+to Apple to be looked up, the same way typing it into Maps works, and
+Apple's privacy policy applies to that lookup. The app uses the result
+once and doesn't store the address or send it to us.</li>
+<li><strong>Face ID and passcode</strong> checks are done by iOS. The
+app never receives your biometric data.</li>
+<li>The files above are ordinary app files, so if you back up your
+device to iCloud or to a computer, they can be included in that backup
+under your own backup settings. Deleting the app removes them from the
+device.</li>
+</ul>
+<h2 id="what-group-mode-sends-to-us">What group mode sends to us</h2>
+<p>Groups let you discuss the ballot live with other people. Using them
+means the app connects to our backend, which is hosted by <a
+href="https://supabase.com/">Supabase</a>. The first time you open the
+Groups tab, the app creates an <strong>anonymous account</strong>: a
+random ID with no email, phone or password behind it. That happens even
+if you never create or join a group. The sign-in token is kept in the
+iOS Keychain on this device only.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>What</th>
+<th>Why</th>
+<th>Who can see it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anonymous account ID</td>
+<td>Tells your posts and votes apart from other people's</td>
+<td>Members of your groups (as the author of what you post)</td>
+</tr>
+<tr>
+<td>Handle (1–40 characters, you choose it)</td>
+<td>Shown next to what you post</td>
+<td>Members of your groups</td>
+</tr>
+<tr>
+<td>ZIP code, if you've entered one</td>
+<td>Works out which races everyone in the room votes on</td>
+<td>Members of your groups</td>
+</tr>
+<tr>
+<td>Group name and invite code</td>
+<td>Creating and joining groups</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>Chat messages and questions (up to 2,000 characters each), and
+upvotes on questions</td>
+<td>The discussion itself</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>A link on a message to the candidate or measure it's about, with its
+page name and your thumbs up or down</td>
+<td>Lets others open that spot</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>Your "pulse" leans (support, unsure or oppose) on races and
+measures</td>
+<td>The group's read on each item and the end-of-session recap</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>Speaker-queue entries: the item, your stance and an optional note
+(up to 280 characters)</td>
+<td>Takes turns on the item under discussion</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>Races the group adds to or removes from the shared agenda</td>
+<td>Builds the room's agenda</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>While you present: the race or measure on screen, and your
+handle</td>
+<td>Lets the room follow along</td>
+<td>Members of the group</td>
+</tr>
+<tr>
+<td>Reports you file (which message or question, the reason you picked,
+and your anonymous ID). Blocking someone from a post also files one</td>
+<td>Moderation</td>
+<td>Us</td>
+</tr>
+<tr>
+<td>If your account is removed for breaking the community rules: your
+anonymous ID, the reason and the date</td>
+<td>Keeping it out of groups</td>
+<td>Us</td>
+</tr>
+<tr>
+<td>Recent join attempts (your anonymous ID and time)</td>
+<td>Stops people guessing invite codes</td>
+<td>Us</td>
+</tr>
+</tbody>
+</table></div>
+<p>Things to keep in mind:</p>
+<ul>
+<li><strong>Your leans on races and measures can reveal your political
+opinions.</strong> Only post or vote in a room you're comfortable with,
+and pick a handle that doesn't identify you if you want to stay
+anonymous. A handle is whatever you type, so using your real name is up
+to you.</li>
+<li><strong>Anyone who has a group's invite code can join it and see
+what's in it.</strong> Share codes only with people you want in the
+group.</li>
+<li><strong>Other members can keep what they've seen.</strong> We can
+delete what you posted from our server, but we can't take back what
+someone has already read, screenshotted or copied.</li>
+<li><strong>We can access the database.</strong> We use that only to
+review reports of abuse, to keep the service running and fix problems,
+and where the law requires it. We don't sell it, share it for
+advertising, or use it to profile you.</li>
+</ul>
+<h2 id="what-we-receive-automatically">What we receive
+automatically</h2>
+<p>When the app downloads ballot updates or connects to groups, our
+hosting provider receives your device's IP address and standard request
+details such as the time and the type of device. Our sign-in service may
+also record the IP address and device type for each sign-in session. We
+don't use these to identify you, and the session records are deleted
+along with your anonymous account when you delete your group data.</p>
+<p>The app has no analytics, advertising or crash-reporting code of its
+own. If you've turned on "Share With App Developers" in iOS settings,
+Apple may give us anonymous crash and usage reports. That's controlled
+by Apple and your device settings.</p>
+<h2 id="services-we-rely-on">Services we rely on</h2>
+<ul>
+<li><strong>Supabase</strong> hosts the group database, the anonymous
+sign-in, live updates, and the downloads of ballot data. See <a
+href="https://supabase.com/privacy">Supabase's privacy policy</a>.</li>
+<li><strong>Apple</strong> provides the App Store and, if you use the
+address feature, the address lookup.</li>
+<li><strong>Websites you open.</strong> Candidate websites and sources
+open in your browser, and their privacy policies apply, not this
+one.</li>
+<li><strong>Sharing.</strong> If you share an invite code or a recap
+using the iOS share sheet, you choose where it goes. We don't see
+it.</li>
+</ul>
+<h2 id="how-long-we-keep-things">How long we keep things</h2>
+<ul>
+<li><strong>On your device:</strong> until you delete it in <em>Your
+data</em> or delete the app.</li>
+<li><strong>On our servers:</strong> messages and questions you post in
+a group, your raised hands and your pulse votes are deleted
+automatically 30 days after you post them, or sooner if you delete them
+with <em>Delete my group data</em> or the group is removed. Your group
+memberships (your handle and ZIP) stay until you leave the group or
+delete your group data. We don't currently delete inactive groups or
+anonymous accounts automatically.</li>
+</ul>
+<h2 id="your-choices">Your choices</h2>
+<p><strong>Your data</strong>, in the Ballot menu or at the bottom of
+the Groups tab, lets you:</p>
+<ul>
+<li><strong>Erase what's on your device,</strong> one kind at a time or
+all at once. A few seconds of Undo are available after each
+deletion.</li>
+<li><strong>Delete your group data.</strong> This permanently removes
+the messages and questions you posted, your votes and raised hands, your
+group memberships with your handle and ZIP, your reports, and finally
+your anonymous account. A group you were the last member of is removed
+with everything in it. It can't be undone. Group decisions about the
+agenda stay with your name removed, and groups with other members stay.
+Other members' screens may keep showing what you posted until they
+reload the room. Data saved on your device isn't affected, so erase that
+separately.</li>
+<li><strong>Stop sharing.</strong> Deleting your group data also
+withdraws the consent you gave by joining a group. If you never open the
+Groups tab, the only thing the app sends to our servers is the request
+for ballot updates (see <a href="#what-we-receive-automatically">What we
+receive automatically</a>). If you open it but never create or join a
+group, all we hold is the anonymous account, which the same delete
+removes.</li>
+</ul>
+<p>Deleting the app removes what's on your device but
+<strong>not</strong> what's on our server, so use <em>Delete my group
+data</em> first if you want that gone.</p>
+<p>Because we don't know who you are, we can't look up your data by name
+or email. The in-app delete is the way to remove it. If you can't use
+it, write to <a
+href="mailto:support@beerandballots.com"><span>support@beerandballots.com</span></a>
+and we'll help.</p>
+<h2 id="reporting-and-blocking">Reporting and blocking</h2>
+<p>Groups have community rules, which you agree to before you create,
+join or enter one. Posts, handles and group names containing blocked
+words are refused when they're sent.</p>
+<p>Tap ••• on someone's message or question (or press and hold it) to
+<strong>report</strong> it or <strong>block</strong> its author. A post
+reported by two different members is hidden for everyone until we review
+it. We review reports within 24 hours, remove content that breaks the
+rules, and remove the account that posted it from all groups. Blocking
+hides that person's posts on your device only; it also tells us which
+post you blocked them from. Please don't post other people's personal
+information.</p>
+<h2 id="information-about-candidates-officials-and-measures">Information
+about candidates, officials and measures</h2>
+<p>The app shows public information about candidates, officeholders and
+ballot measures, collected from government records and other public
+sources. <em>Help → Data sources &amp; licensing</em> lists them. This
+is information about public figures and measures, not about app
+users.</p>
+<p>Campaign donations from individuals are shown only as totals, not by
+name or address, and only organizations are named. We check for this
+automatically, and the checks can miss a name. If you find the name or
+address of a private individual in the app, or any other information you
+think is wrong, please tell us at <a
+href="mailto:support@beerandballots.com"><span>support@beerandballots.com</span></a>.
+We will review it and correct or remove it.</p>
+<h2 id="security">Security</h2>
+<p>Connections to our servers use HTTPS. Group data is protected by
+access rules that let only a group's members read it. Your sign-in token
+is in the iOS Keychain. No system is perfectly secure, so we can't
+promise absolute security.</p>
+<h2 id="children">Children</h2>
+<p>The app isn't directed to children under 13, and we don't knowingly
+collect their information. If you believe a child has used groups,
+contact us and we'll delete the data.</p>
+<h2 id="your-privacy-rights">Your privacy rights</h2>
+<p>We don't sell your personal information and we don't share it for
+advertising. Depending on where you live, you may have rights to know
+what we hold, to delete it, or to correct it. The <em>Your data</em>
+screen covers deletion, and you can contact us about anything else.</p>
+<h2 id="changes">Changes</h2>
+<p>If we change this policy, we'll update the date at the top. If a
+change affects what we collect or how we use it, we'll say so in the
+app's update notes.</p>
+<h2 id="contact">Contact</h2>
+<p><a
+href="mailto:support@beerandballots.com"><span>support@beerandballots.com</span></a></p>
+
+<footer>Beer and Ballots is an independent app. It is not an official election resource and is not
+affiliated with any government agency, candidate or campaign.</footer>
+</main>
+</body>
+</html>
